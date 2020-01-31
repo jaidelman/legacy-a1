@@ -112,7 +112,7 @@ subroutine lucifer(d,k,m)
   return
 end
 
-! Expands a string
+! Expands input bytes into binary array format
 subroutine expand(a,b,l)
   implicit integer (a-z)
   integer, dimension(0:*), intent(out) :: a
@@ -128,7 +128,7 @@ subroutine expand(a,b,l)
   return
 end
 
-! Compresses a string
+! Compresses array format back to byte format
 subroutine compress(a,b,l)
   implicit integer (a-z)
   integer, dimension(0:*), intent(in) :: a
